@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 5fr 2fr;
+  gap: 2rem;
 }
 
 .panel > .projects {
@@ -43,3 +44,51 @@ body {
   background: rgb(156, 196, 221);
 }
 
+.trending > .trending-users {
+  max-width: 100%;
+  min-height: 3rem;
+  max-height: 20rem;
+  height: auto;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trending-users > .user {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.user img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+
+.user p {
+  padding: 0;
+  margin: 0;
+}
+
+.user div {
+  height: 3rem;
+}
+
+.user .title {
+  text-transform: capitalize;
+}
+
+.center-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
